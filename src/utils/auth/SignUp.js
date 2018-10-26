@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TouchableOpacity, KeyboardAvoidingView, Platform } from 'react-native';
 import IconTextInput from './ui/IconTextInput';
 import ModalTokenInput from './ui/ModalTokenInput';
 import Wrapper from './ui/Wrapper';
@@ -33,14 +33,13 @@ const styles = StyleSheet.create({
     },
     formContainer: {
         width: '100%',
-        marginTop: '20%',
-        height: 500,
+        height: '60%'
     },
     signUpForm: {
         marginLeft: '10%',
         marginRight: '10%',
-        marginTop: '30%',
-        height: 530,
+        marginTop: '40%',
+        height: 420,
     }
 
 });
@@ -76,41 +75,41 @@ class SignUp extends React.Component {
 
     async onSignUp() {
         if (this.state.firstName.length === 0 || this.state.lastName.length === 0) {
-          this.setState({ error: 'First Name and Last Name are required', loading: false });
-          return;
+            this.setState({ error: 'First Name and Last Name are required', loading: false });
+            return;
         }
 
         if (this.state.address.length === 0 || this.state.city.length === 0 || this.state.state.length === 0 || this.state.zip.length === 0) {
-          this.setState({ error: 'Address is required', loading: false });
-          return;
+            this.setState({ error: 'Address is required', loading: false });
+            return;
         }
 
         if (!EmailValidator.validate(this.state.emailaddress)) {
-          this.setState({ error: 'Email address is invalid', loading: false });
-          return;
+            this.setState({ error: 'Email address is invalid', loading: false });
+            return;
         }
 
         var phoneRe = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{5,6}$/im;
         if (!phoneRe.test(this.state.phone.replace(/\D/g, ""))) {
-          this.setState({ error: 'Phone Number is invalid', loading: false });
-          return;
+            this.setState({ error: 'Phone Number is invalid', loading: false });
+            return;
         }
 
         try {
             this.setState({ loading: true });
             const response = await Auth.signUp({
-              username: this.state.username,
-              password: this.state.password,
-              attributes: {
-                email: this.state.emailaddress,
-                phone_number: this.state.phone,
-                'custom:first_name': this.state.firstName,
-                'custom:last_name': this.state.lastName,
-                'custom:address': this.state.address,
-                'custom:city': this.state.city,
-                'custom:state': this.state.state,
-                'custom:zip': this.state.zip,
-              }
+                username: this.state.username,
+                password: this.state.password,
+                attributes: {
+                    email: this.state.emailaddress,
+                    phone_number: this.state.phone,
+                    'custom:first_name': this.state.firstName,
+                    'custom:last_name': this.state.lastName,
+                    'custom:address': this.state.address,
+                    'custom:city': this.state.city,
+                    'custom:state': this.state.state,
+                    'custom:zip': this.state.zip,
+                }
             });
             console.log(`SignUp::onSignUp(): Response#1 = ${JSON.stringify(response, null, 2)}`);
             if (response.userConfirmed === false) {
@@ -148,11 +147,10 @@ class SignUp extends React.Component {
 
         return (
             <Wrapper>
-            {this.state.error !== null && errorComponent}
-            <KeyboardAvoidingView behavior="height">
-              <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
-                  <View style={styles.signUpForm}>
-                        <View style={styles.formContainer}>
+                {this.state.error !== null && errorComponent}
+                <View style={styles.signUpForm}>
+                    <ScrollView style={styles.formContainer}>
+                        <KeyboardAvoidingView keyboardVerticalOffset={50} style={{flex: 1}} behavior='padding'>
                             <IconTextInput {...settings.usernameInput}/>
                             <IconTextInput {...settings.firstNameInput}/>
                             <IconTextInput {...settings.lastNameInput}/>
@@ -163,19 +161,17 @@ class SignUp extends React.Component {
                             <IconTextInput {...settings.stateInput}/>
                             <IconTextInput {...settings.zipInput}/>
                             <IconTextInput {...settings.passwordInput}/>
-                        </View>
-
-                  </View>
-                  </ScrollView>
-                  </KeyboardAvoidingView>
+                        </KeyboardAvoidingView>
+                    </ScrollView>
+                </View>
                 <View style={styles.flexGrow}/>
                 <View style={styles.buttonsContainer}>
-                  <TouchableOpacity onPress={() => this.onSignUp()}>
-                    <Text style={settings.submitButton}>{ this.state.loading ? 'Please Wait'.toUpperCase() : 'Sign Up'.toUpperCase() }</Text>
-                  </TouchableOpacity>
-                  <TouchableOpacity disabled={this.state.loading} onPress={() => this.props.onAuthStateChange('default', {})}>
-                    <Text style={settings.cancelButton}>{ 'Cancel'.toUpperCase() }</Text>
-                  </TouchableOpacity>
+                    <TouchableOpacity onPress={() => this.onSignUp()}>
+                        <Text style={settings.submitButton}>{ this.state.loading ? 'Please Wait'.toUpperCase() : 'Sign Up'.toUpperCase() }</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity disabled={this.state.loading} onPress={() => this.props.onAuthStateChange('default', {})}>
+                        <Text style={settings.cancelButton}>{ 'Cancel'.toUpperCase() }</Text>
+                    </TouchableOpacity>
                 </View>
                 <ModalTokenInput {...settings.confirmPrompt}/>
             </Wrapper>

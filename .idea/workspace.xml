@@ -1,8 +1,308 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ChangeListManager">
+    <list default="true" id="bd474c42-3180-424e-9de2-c11eb4de578b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.flowconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ivasap-mobile-app-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.watchmanconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android_config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/awsmobilejs/.awsmobile/info/project-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/lambda.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/awsmobilejs/backend/mobile-hub-project.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli_commands" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ivasap_icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ivasap_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/locations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AssignedDrip/AssignedDrip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AssignedDrip/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AssignedDrip/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assignments/Assignments.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assignments/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assignments/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Confirmation Map/ConfirmationMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Confirmation Map/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Confirmation Map/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Confirmation Screen/ConfirmationScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Confirmation Screen/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Confirmation Screen/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Container/Container.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Container/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Container/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DripListItem/DripListItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DripListItem/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DripListItem/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Drips/Drips.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Drips/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Drips/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Drips/ui/assets/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Logo/Logo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Logo/images/HP-Hero-BG-trim.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Logo/images/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Logo/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Logo/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Map/Map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Map/images/carMarker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Map/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Map/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation Button/NavigationButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation Button/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation Button/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NurseFace/NurseFace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NurseFace/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NurseFace/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ui/assets/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ui/assets/icon.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ui/assets/icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Round Button/RoundButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Round Button/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Round Button/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ServiceListItem/ServiceListItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ServiceListItem/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ServiceListItem/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Services/Services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Services/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Services/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Services/ui/assets/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Services/ui/assets/icon.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Services/ui/assets/icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Vehicle/Vehicle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Vehicle/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Vehicle/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/forSubtitle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/formSettings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/portalUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/Services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/localip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/locations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/datepair/bootstrap-datepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/datepair/bootstrap-datepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/datepair/datepair.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/datepair/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/datepair/jquery.datepair.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/datepair/jquery.timepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/datepair/jquery.timepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/jquery-nice-select/jquery.nice-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/jquery-nice-select/nice-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/AssignedDrip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/Assignments.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/BookService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/Checkout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/DripListItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/Drips.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/Map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/Profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/ServiceListItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/Services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/Vehicle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/auth/Authenticator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/auth/ForgotPassword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/auth/ForgotUsername.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/auth/SignIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/auth/SignUp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/auth/ui/IconTextInput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/auth/ui/ModalTokenInput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/auth/ui/Wrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/auth/ui/assets/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/auth/ui/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-367961783">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/utils/auth/SignUp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="161" column="68" selection-start-line="161" selection-start-column="68" selection-end-line="161" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/utils/auth/SignUp.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/accepts/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/amazon-cognito-identity-js/examples/babel-webpack/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/amazon-cognito-identity-js/node_modules/aws-sdk/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/amazon-cognito-identity-js/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/aws-sdk/node_modules/ieee754/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/aws-sdk/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/aws-serverless-express/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/base64-js/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/binary-case/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/buffer/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/content-disposition/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/crypto-browserify/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/crypto-browserify/test/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/destroy/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/encodeurl/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/escape-html/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/etag/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/events/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/express/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/express/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/finalhandler/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/finalhandler/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/forwarded/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/fresh/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/ieee754/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/ipaddr.js/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/jmespath/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/js-cookie/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/lodash/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/merge-descriptors/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/negotiator/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/parseurl/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/proxy-addr/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/querystring/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/range-parser/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/raw-body/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/raw-body/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/raw-body/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/sax/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/send/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/send/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/serve-static/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/url/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/utils-merge/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/uuid/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/vary/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/xml2js/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/xmlbuilder/package.json" />
+      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/package.json" />
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1386" />
     <option name="height" value="788" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ivasap-mobile-app-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ivasap-mobile-app-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ivasap-mobile-app-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ivasap-mobile-app-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ivasap-mobile-app-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ivasap-mobile-app-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ivasap-mobile-app-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ivasap-mobile-app-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -10,5 +310,72 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd474c42-3180-424e-9de2-c11eb4de578b" name="Default Changelist" comment="" />
+      <created>1540536659317</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540536659317</updated>
+      <workItem from="1540536662434" duration="249000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="249000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <layout>
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969843" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32922733" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/aws-sdk/scripts/services-table-generator.js" />
+        <option value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/amazon-cognito-identity-js/node_modules/aws-sdk/scripts/services-table-generator.js" />
+      </list>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/utils/auth/SignUp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="161" column="68" selection-start-line="161" selection-start-column="68" selection-end-line="161" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
