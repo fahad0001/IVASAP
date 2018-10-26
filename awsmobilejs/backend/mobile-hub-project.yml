@@ -1,0 +1,83 @@
+--- !com.amazonaws.mobilehub.v0.Project 
+apps:
+  react-native: !com.amazonaws.mobilehub.v0.AppDO {}
+features:
+  cloudlogic: !com.amazonaws.mobilehub.v0.CloudLogic 
+    components:
+      RequestsCRUD: !com.amazonaws.mobilehub.v0.API 
+        attributes:
+          name: RequestsCRUD
+          requires-signin: true
+          sdk-generation-stage-name: Development
+        paths:
+          /Requests: !com.amazonaws.mobilehub.v0.Function 
+            codeFilename: uploads/Requests-20180402204805.zip
+            description: 'Handler for calls to resource path : /Requests/{proxy+}'
+            enableCORS: true
+            environment: {}
+            handler: lambda.handler
+            hashcode: 2IfWIyzt2ZT7DkjakbBz2GecdyjvnSh+GcVXZ9pLtuA=
+            memorySize: '128'
+            modified: '2018-04-03T01:49:53.070+0000'
+            name: Requests
+            runtime: nodejs6.10
+            timeout: '3'
+            version: TCH.hKr6z7KhpLIBnyUMF2btBggwqXmK
+          '/Requests/{proxy+}': !com.amazonaws.mobilehub.v0.Function 
+            codeFilename: uploads/Requests-20180402204805.zip
+            description: 'Handler for calls to resource path : /Requests/{proxy+}'
+            enableCORS: true
+            environment: {}
+            handler: lambda.handler
+            hashcode: 2IfWIyzt2ZT7DkjakbBz2GecdyjvnSh+GcVXZ9pLtuA=
+            memorySize: '128'
+            modified: '2018-04-03T01:49:53.070+0000'
+            name: Requests
+            runtime: nodejs6.10
+            timeout: '3'
+            version: Nx6wijqqMcyCSGqEtqpfzM_LyqfxxsBU
+  content-delivery: !com.amazonaws.mobilehub.v0.ContentDelivery 
+    attributes:
+      enabled: true
+      visibility: public-global
+    components:
+      release: !com.amazonaws.mobilehub.v0.Bucket {}
+  database: !com.amazonaws.mobilehub.v0.Database 
+    components:
+      database-nosql: !com.amazonaws.mobilehub.v0.NoSQLDatabase 
+        tables:
+          - !com.amazonaws.mobilehub.v0.NoSQLTable 
+            attributes:
+              customer_id: S
+              nurse_id: S
+              request_status: S
+              userId: S
+            hashKeyName: userId
+            hashKeyType: S
+            rangeKeyName: ''
+            rangeKeyType: ''
+            tableName: ___DYNAMIC_PREFIX___-Requests
+            tablePrivacy: private
+  mobile-analytics: !com.amazonaws.mobilehub.v0.Pinpoint 
+    components:
+      analytics: !com.amazonaws.mobilehub.v0.PinpointAnalytics {}
+  sign-in: !com.amazonaws.mobilehub.v0.SignIn 
+    attributes:
+      enabled: true
+      optional-sign-in: true
+    components:
+      sign-in-user-pools: !com.amazonaws.mobilehub.v0.UserPoolsIdentityProvider 
+        attributes:
+          alias-attributes:
+            - email
+            - phone_number
+          mfa-configuration: ON
+          name: userpool
+          password-policy: !com.amazonaws.mobilehub.ConvertibleMap 
+            min-length: '8'
+            require-lower-case: true
+            require-numbers: true
+            require-symbols: true
+            require-upper-case: true
+name: ivasap-mobile
+region: us-east-1

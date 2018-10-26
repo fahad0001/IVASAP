@@ -1,0 +1,1 @@
+AWS_ACCESS_KEY_ID="AKIAJAPOTOAP4PMXFYQQ" AWS_SECRET_ACCESS_KEY="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" aws cognito-idp admin-update-user-attributes --user-pool-id us-east-1_zA0uxRQBa --username janenurse --user-attributes Name=custom:is_ivasap_nurse,Value=1

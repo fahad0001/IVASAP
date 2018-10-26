@@ -1,0 +1,26 @@
+{
+	"expo": {
+		"name": "IVASAP",
+		"sdkVersion": "26.0.0",
+		"icon": "./ivasap_icon.png",
+		"description": "Basic app",
+		"version": "1.0.3",
+		"slug": "ivasap",
+		"orientation": "portrait",
+		"ios": {
+			"bundleIdentifier": "com.ivasap.ivasapapp",
+			"buildNumber": "3"
+		},
+		"android": {
+			"package": "com.ivasap.ivasap",
+	    "versionCode": 3,
+			"icon": "./ivasap_icon.png",
+			"permissions": [
+				"ACCESS_FINE_LOCATION"
+			]
+		}
+	},
+  "infoPlist": {
+    "NSLocationWhenInUseUsageDescription": "This app uses the location of the user."
+  }
+}
