@@ -70,7 +70,7 @@ export default class App extends Component {
                 <Scene key="services" component={Services} title="Formulas" hideNavBar={true} icon={TabIcon} iconName="shopping-cart" onEnter={() => { Actions.refresh({key: Math.random()}); }} />
                 <Scene key="drips" component={Drips} title="My Drips" hideNavBar={true} icon={TabIcon} iconName="droplet" onEnter={() => { Actions.refresh({key: Math.random()}); }} />
                 <Scene key="checkout" component={Checkout} title="Checkout" hideNavBar={true} icon={TabIcon} iconName="check-circle" onEnter={() => { Actions.refresh({key: Math.random()}); }} />
-                <Scene key="profile" component={Profile} title="My Profile" hideNavBar={true} icon={TabIcon} iconName="user" onEnter={() => { Actions.refresh({key: Math.random()}, tabBarVisible: false); }} />
+                <Scene key="profile" component={Profile} title="My Profile" hideNavBar={true} icon={TabIcon} iconName="user" onEnter={() => { Actions.refresh({key: Math.random(), tabBarVisible: false}); }} />
               </Scene>
               <Scene key="drip" component={DripListItem} title="" hideNavBar={true}  />
               <Scene key="service" component={ServiceListItem} title="" hideNavBar={true} />

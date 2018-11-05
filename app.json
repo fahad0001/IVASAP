@@ -4,16 +4,16 @@
 		"sdkVersion": "26.0.0",
 		"icon": "./ivasap_icon.png",
 		"description": "Basic app",
-		"version": "1.0.3",
+		"version": "1.0.4",
 		"slug": "ivasap",
 		"orientation": "portrait",
 		"ios": {
 			"bundleIdentifier": "com.ivasap.ivasapapp",
-			"buildNumber": "3"
+			"buildNumber": "4"
 		},
 		"android": {
 			"package": "com.ivasap.ivasap",
-	    "versionCode": 3,
+	    "versionCode": 4,
 			"icon": "./ivasap_icon.png",
 			"permissions": [
 				"ACCESS_FINE_LOCATION"
