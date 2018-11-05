@@ -2,132 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd474c42-3180-424e-9de2-c11eb4de578b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.flowconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ivasap-mobile-app-master.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.watchmanconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awsmobilejs/.awsmobile/info/project-config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/lambda.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awsmobilejs/backend/mobile-hub-project.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli_commands" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ivasap_icon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ivasap_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/locations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AssignedDrip/AssignedDrip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AssignedDrip/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AssignedDrip/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Assignments/Assignments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Assignments/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Assignments/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Confirmation Map/ConfirmationMap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Confirmation Map/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Confirmation Map/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Confirmation Screen/ConfirmationScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Confirmation Screen/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Confirmation Screen/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Container/Container.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Container/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Container/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DripListItem/DripListItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DripListItem/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DripListItem/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drips/Drips.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drips/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drips/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drips/ui/assets/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Logo/Logo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Logo/images/HP-Hero-BG-trim.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Logo/images/Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Logo/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Logo/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Map/Map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Map/images/carMarker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Map/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Map/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation Button/NavigationButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation Button/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation Button/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NurseFace/NurseFace.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NurseFace/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NurseFace/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/ui/assets/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/ui/assets/icon.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/ui/assets/icon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Round Button/RoundButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Round Button/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Round Button/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ServiceListItem/ServiceListItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ServiceListItem/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ServiceListItem/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Services/Services.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Services/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Services/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Services/ui/assets/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Services/ui/assets/icon.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Services/ui/assets/icon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Vehicle/Vehicle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Vehicle/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Vehicle/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/forSubtitle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/formSettings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/portalUrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/Services.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/localip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/locations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/datepair/bootstrap-datepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/datepair/bootstrap-datepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/datepair/datepair.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/datepair/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/datepair/jquery.datepair.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/datepair/jquery.timepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/datepair/jquery.timepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/jquery-nice-select/jquery.nice-select.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/jquery-nice-select/nice-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/AssignedDrip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Assignments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/BookService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Checkout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/DripListItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Drips.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/ServiceListItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Services.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Vehicle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/auth/Authenticator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/auth/ForgotPassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/auth/ForgotUsername.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/auth/SignIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/auth/SignUp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/auth/ui/IconTextInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/auth/ui/ModalTokenInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/auth/ui/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/auth/ui/assets/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/auth/ui/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -147,30 +23,95 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="528120911">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="amplifyrc" value="1" />
+          <entry key="gitignore" value="1" />
+          <entry key="js" value="4" />
+          <entry key="json" value="6" />
+          <entry key="yml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="6" />
+          <entry key="JavaScript" value="4" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="YAML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cli_commands" value="6" />
+          <entry key="gitignore" value="10" />
+          <entry key="js" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="1" />
+          <entry key="PLAIN_TEXT" value="16" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/utils/auth/SignUp.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/lambda.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="161" column="68" selection-start-line="161" selection-start-column="68" selection-end-line="161" selection-end-column="68" />
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aws-exports.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" selection-start-line="25" selection-end-line="25" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/utils/auth/SignUp.js" />
+        <option value="$PROJECT_DIR$/cli_commands" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/aws-exports.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
     <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
@@ -280,24 +221,6 @@
               <item name="ivasap-mobile-app-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="ivasap-mobile-app-master" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ivasap-mobile-app-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ivasap-mobile-app-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ivasap-mobile-app-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ivasap-mobile-app-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ivasap-mobile-app-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ivasap-mobile-app-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -323,6 +246,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="bd474c42-3180-424e-9de2-c11eb4de578b" name="Default Changelist" comment="" />
@@ -335,26 +278,28 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249000" />
+    <option name="totallyTimeSpent" value="7080000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="npm" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49916527" visible="true" weight="0.24969843" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32922733" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="npm" order="2" sideWeight="0.5008347" side_tool="true" weight="0.24969843" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8398656" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" weight="0.33706608" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32922733" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -374,6 +319,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="161" column="68" selection-start-line="161" selection-start-column="68" selection-end-line="161" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amplify/.config/project-config.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amplify/backend/amplify-meta.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amplify/backend/api/Request/Request-cloudformation-template.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6759" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awsmobilejs/.awsmobile/info/project-config.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awsmobilejs/backend/mobile-hub-project.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="81" column="9" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.amplifyrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli_commands">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3328">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/lambda.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aws-exports.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" selection-end-column="10" />
         </state>
       </provider>
     </entry>
