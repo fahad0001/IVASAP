@@ -14,13 +14,20 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         width: '100%'
     },
-    errorContainer: {
+    alertContainer: {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
     },
     error: {
         backgroundColor: 'red',
+        color: 'white',
+        alignSelf: 'center',
+        paddingLeft: 8,
+        paddingRight: 8,
+    },
+    success: {
+        backgroundColor: 'green',
         color: 'white',
         alignSelf: 'center',
         paddingLeft: 8,
@@ -54,8 +61,10 @@ class SignIn extends React.Component {
             modalShowing: false,
             loading: false,
             error: null,
+            success: null,
             username: this.props.authData.username || '',
             password: this.props.authData.password || '',
+            passwordType: false,
             user: null
         };
     }
@@ -74,7 +83,12 @@ class SignIn extends React.Component {
 
             // If there is a challenge, then show the modal
             if ('challengeName' in data) {
-                console.log(`onSignIn: Expecting challenge to be recieved via ${data.challengeType}`);
+                if (data.challengeName === 'NEW_PASSWORD_REQUIRED') {
+                    this.setState({passwordType: true})
+                }
+                else {
+                    console.log(`onSignIn: Expecting challenge to be recieved via ${data.challengeType}`);
+                }
                 this.setState({ user: data, loading: false, modalShowing: true });
             }
 
@@ -94,6 +108,34 @@ class SignIn extends React.Component {
             console.log(`onConfirmSignIn::Response#2: ${JSON.stringify(data, null, 2)}`);
             const profile = await Auth.currentUser();
             this.props.onAuthStateChange('authenticated', profile);
+        } catch (err) {
+            console.log('Error: ', err);
+            this.setState({ error: (err.message || err), loading: false, modalShowing: false });
+        }
+    }
+
+    async onConfirmPassword(password) {
+        this.setState({ loading: true, error: null, success: null });
+        const userAttribute = {
+            email: this.state.user.challengeParam.userAttributes.email,
+            phone_number: this.state.user.challengeParam.userAttributes.phone_number,
+        };
+
+        try {
+            console.log(`onConfirmPassword:: ${this.state.username}`);
+            this.state.user.completeNewPasswordChallenge(password, userAttribute, {
+                onSuccess: result => {
+                    console.log('Successful '+ result);
+                    this.props.onAuthStateChange('default', { username: this.state.username });
+                    this.setState({loading: false, modalShowing: false,
+                        username: '', password: '',success: 'New password set successfully!' });
+                },
+                onFailure: error => {
+                    console.log('Error: '+ error);
+                    this.setState({ error: (error.message || error), loading: false, modalShowing: false });
+
+                }
+            });
         } catch (err) {
             console.log('Error: ', err);
             this.setState({ error: (err.message || err), loading: false, modalShowing: false });
@@ -134,7 +176,13 @@ class SignIn extends React.Component {
                 letterSpacing: 2,
                 marginRight: '2%',
             },
-            mfaPrompt: {
+            promptConfig:  this.state.passwordType ? {
+                isVisible: this.state.modalShowing,
+                isPassword: true,
+                title: 'New Password Required',
+                description: 'Enter new password for the account.',
+                onSubmit: (password) => this.onConfirmPassword(password)
+            } : {
                 isVisible: this.state.modalShowing,
                 title: 'MFA Token Required',
                 description: 'Enter the six digit token you were just sent.',
@@ -182,12 +230,17 @@ class SignIn extends React.Component {
         };
 
         const errorComponent = this.state.error !== null
-            ? <View style={styles.errorContainer}><Text style={styles.error}>{this.state.error}</Text></View>
+            ? <View style={styles.alertContainer}><Text style={styles.error}>{this.state.error}</Text></View>
+            : false;
+
+        const successComponent = this.state.success != null
+            ? <View style={styles.alertContainer}><Text style={styles.success}>{this.state.success}</Text></View>
             : false;
 
         return (
             <Wrapper>
                 {this.state.error !== null && errorComponent}
+                {this.state.success !== null && successComponent}
                 <View style={styles.signInForm}>
                     <View style={styles.signInFormContainer}>
                         <IconTextInput {...settings.usernameInput}/>
@@ -211,7 +264,7 @@ class SignIn extends React.Component {
                     <Text style={settings.forgotPasswordButton}>{ 'Forgot Password'.toUpperCase() }</Text>
                   </TouchableOpacity>
                 </View>
-                <ModalTokenInput {...settings.mfaPrompt}/>
+                <ModalTokenInput {...settings.promptConfig}/>
             </Wrapper>
         );
     }

@@ -23,12 +23,12 @@ class Authenticator extends Component {
             await AsyncStorage.setItem('@SuperStore:username', authData.username);
             await AsyncStorage.setItem('@SuperStore:email', authData.signInUserSession.idToken.payload.email);
             await AsyncStorage.setItem('@SuperStore:phoneNumber', authData.signInUserSession.idToken.payload.phone_number);
-            await AsyncStorage.setItem('@SuperStore:firstName', authData.signInUserSession.idToken.payload['custom:first_name']);
-            await AsyncStorage.setItem('@SuperStore:lastName', authData.signInUserSession.idToken.payload['custom:last_name']);
-            await AsyncStorage.setItem('@SuperStore:address', authData.signInUserSession.idToken.payload['custom:address']);
-            await AsyncStorage.setItem('@SuperStore:city', authData.signInUserSession.idToken.payload['custom:city']);
-            await AsyncStorage.setItem('@SuperStore:state', authData.signInUserSession.idToken.payload['custom:state']);
-            await AsyncStorage.setItem('@SuperStore:zip', authData.signInUserSession.idToken.payload['custom:zip']);
+            await AsyncStorage.setItem('@SuperStore:firstName', authData.signInUserSession.idToken.payload['custom:first_name'] || '');
+            await AsyncStorage.setItem('@SuperStore:lastName', authData.signInUserSession.idToken.payload['custom:last_name'] || '');
+            await AsyncStorage.setItem('@SuperStore:address', authData.signInUserSession.idToken.payload['custom:address'] || '');
+            await AsyncStorage.setItem('@SuperStore:city', authData.signInUserSession.idToken.payload['custom:city'] || '');
+            await AsyncStorage.setItem('@SuperStore:state', authData.signInUserSession.idToken.payload['custom:state'] || '');
+            await AsyncStorage.setItem('@SuperStore:zip', authData.signInUserSession.idToken.payload['custom:zip'] || '');
             await AsyncStorage.setItem('@SuperStore:customerId', authData.signInUserSession.idToken.payload['custom:customer_id'] || '');
             await AsyncStorage.setItem('@SuperStore:isNurse', (authData.signInUserSession.idToken.payload['custom:is_ivasap_nurse'] || '0'));
             await AsyncStorage.setItem('@SuperStore:cart', JSON.stringify([]));

@@ -5,6 +5,7 @@
 
 # dependencies
 node_modules/
+.idea/**/*
 
 # misc
 .env.local
@@ -20,6 +21,7 @@ yarn-error.log*
 aws-info.json
 project-info.json
 aws-exports.js
+ivasap.jks
 awsmobilejs/.awsmobile/backend-build
 awsmobilejs/\#current-backend-info
 ~awsmobilejs-*/
