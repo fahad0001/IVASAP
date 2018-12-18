@@ -76,6 +76,7 @@ class ModalTokenInput extends React.Component {
         description: 'Enter the token you were sent.',
         buttonTitle: 'Confirm',
         style: '',
+        isPassword: false,
 
         // If a controlled component, these will be set
         value: '',
@@ -125,15 +126,16 @@ class ModalTokenInput extends React.Component {
      * @member ModalTokenInput
      */
     render() {
+        const maxLength = !this.props.isPassword ? 6 : 20;
         const settings = {
             digitInput: {
                 autoCorrect: false,
                 autoFocus: true,
-                keyboardType: 'numeric',
-                maxLength: 6,
-                secureTextEntry: false,
+                keyboardType: !this.props.isPassword ? 'numeric': 'default',
+                maxLength: maxLength,
+                secureTextEntry: !!this.props.isPassword,
                 onChangeText: (text) => this.onChange(text),
-                style: styles.digitInput
+                style: StyleSheet.flatten([styles.digitInput, {width: (15 * maxLength)}])
             }
         };
 
@@ -145,7 +147,7 @@ class ModalTokenInput extends React.Component {
                     <View style={styles.digitInputContainer}>
                         <TextInput {...settings.digitInput}/>
                     </View>
-                    <TouchableOpacity disabled={this.state.value.length !== 6} onPress={() => this.onSubmit()}>
+                    <TouchableOpacity disabled={!this.props.isPassword && this.state.value.length !== 6  } onPress={() => this.onSubmit()}>
                       <Text style={styles.submitButton}>{ this.props.buttonTitle.toUpperCase() }</Text>
                     </TouchableOpacity>
                 </View>
