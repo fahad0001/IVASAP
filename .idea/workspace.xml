@@ -2,215 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd474c42-3180-424e-9de2-c11eb4de578b" name="Default Changelist" comment="[ignore] .amplifyrc">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aws-exports.js" beforeDir="false" afterPath="$PROJECT_DIR$/aws-exports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-367961783">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="528120911">
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="amplifyrc" value="1" />
-          <entry key="gitignore" value="1" />
-          <entry key="jpg" value="1" />
-          <entry key="js" value="11" />
-          <entry key="json" value="10" />
-          <entry key="png" value="1" />
-          <entry key="yml" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Image" value="2" />
-          <entry key="JSON" value="10" />
-          <entry key="JavaScript" value="11" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="YAML" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="cli_commands" value="6" />
-          <entry key="gitignore" value="10" />
-          <entry key="js" value="2" />
-          <entry key="json" value="4" />
-          <entry key="txt" value="19" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="2" />
-          <entry key="PLAIN_TEXT" value="35" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            <state relative-caret-position="270">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>key</find>
-      <find>.jsk</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/utils/auth/SignUp.js" />
-        <option value="$PROJECT_DIR$/cli_commands" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app.json" />
-        <option value="$PROJECT_DIR$/aws-exports.js" />
-      </list>
-    </option>
-  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
-  </component>
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/accepts/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/amazon-cognito-identity-js/examples/babel-webpack/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/amazon-cognito-identity-js/node_modules/aws-sdk/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/amazon-cognito-identity-js/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/array-flatten/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/aws-sdk/node_modules/ieee754/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/aws-sdk/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/aws-serverless-express/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/base64-js/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/binary-case/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/body-parser/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/buffer/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/bytes/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/content-disposition/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/content-type/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/cookie-signature/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/cookie/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/crypto-browserify/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/crypto-browserify/test/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/depd/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/destroy/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/ee-first/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/encodeurl/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/escape-html/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/etag/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/events/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/express/node_modules/statuses/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/express/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/finalhandler/node_modules/statuses/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/finalhandler/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/forwarded/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/fresh/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/http-errors/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/iconv-lite/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/ieee754/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/ipaddr.js/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/jmespath/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/js-cookie/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/lodash/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/media-typer/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/merge-descriptors/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/methods/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/mime-db/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/mime-types/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/mime/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/negotiator/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/on-finished/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/parseurl/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/path-to-regexp/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/proxy-addr/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/punycode/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/qs/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/querystring/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/range-parser/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/raw-body/node_modules/depd/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/raw-body/node_modules/http-errors/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/raw-body/node_modules/setprototypeof/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/raw-body/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/safe-buffer/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/sax/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/send/node_modules/statuses/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/send/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/serve-static/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/setprototypeof/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/statuses/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/type-is/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/unpipe/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/url/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/utils-merge/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/uuid/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/vary/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/xml2js/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/xmlbuilder/package.json" />
-      <path value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/package.json" />
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="784" />
+    <option name="height" value="1382" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -226,34 +69,11 @@
               <item name="ivasap-mobile-app-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="ivasap-mobile-app-master" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ivasap-mobile-app-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ivasap-mobile-app-master" type="462c0819:PsiDirectoryNode" />
-              <item name=".expo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ivasap-mobile-app-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ivasap-mobile-app-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ivasap-mobile-app-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ivasap-mobile-app-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -267,23 +87,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.start" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -295,6 +98,20 @@
       <option name="presentableId" value="Default" />
       <updated>1540536659317</updated>
       <workItem from="1540536662434" duration="249000" />
+      <workItem from="1542375828095" duration="458000" />
+      <workItem from="1542452097214" duration="713000" />
+      <workItem from="1542492680323" duration="3805000" />
+      <workItem from="1542576488823" duration="10000" />
+      <workItem from="1542878448058" duration="1850000" />
+      <workItem from="1542962744894" duration="8952000" />
+      <workItem from="1543447003934" duration="122000" />
+      <workItem from="1544826010495" duration="1182000" />
+      <workItem from="1544891042362" duration="26779000" />
+      <workItem from="1544978013834" duration="613000" />
+      <workItem from="1544989371305" duration="2653000" />
+      <workItem from="1545139018963" duration="2836000" />
+      <workItem from="1545221541703" duration="15000" />
+      <workItem from="1545296709044" duration="243000" />
     </task>
     <task id="LOCAL-00001" summary="[ignore] .amplifyrc">
       <created>1541437954180</created>
@@ -303,32 +120,38 @@
       <option name="project" value="LOCAL" />
       <updated>1541437954181</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[Refactor] changes in package version and build version&#10;[Added] Login Flow for new user from Admin&#10;[Added] New User Password Modal">
+      <created>1545139960423</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1545139960423</updated>
+    </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13768000" />
+    <option name="totallyTimeSpent" value="174000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1296" height="744" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49916527" visible="true" weight="0.24969843" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4957265" visible="true" weight="0.24403815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.5008347" side_tool="true" weight="0.24969843" />
+      <window_info id="npm" order="2" sideWeight="0.50427353" side_tool="true" weight="0.24403815" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.8398656" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2700491" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" weight="0.33706608" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32922733" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.33551556" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3666121" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -355,152 +178,12 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/aws-sdk/scripts/services-table-generator.js" />
-        <option value="$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/node_modules/amazon-cognito-identity-js/node_modules/aws-sdk/scripts/services-table-generator.js" />
-      </list>
-    </option>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[ignore] .amplifyrc" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ignore] .amplifyrc" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amplify/.config/project-config.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amplify/backend/amplify-meta.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amplify/backend/api/Request/Request-cloudformation-template.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6759" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awsmobilejs/.awsmobile/info/project-config.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.amplifyrc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli_commands">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/auth/SignUp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="161" column="67" lean-forward="true" selection-start-line="161" selection-start-column="67" selection-end-line="161" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1302">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awsmobilejs/backend/mobile-hub-project.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/lambda.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awsmobilejs/backend/cloud-api/Requests/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ivasap_icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ivasap_icon.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/screens/Profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.expo/settings.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.expo/packager-info.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aws-exports.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <MESSAGE value="[Refactor] changes in package version and build version&#10;[Added] Login Flow for new user from Admin&#10;[Added] New User Password Modal" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Refactor] changes in package version and build version&#10;[Added] Login Flow for new user from Admin&#10;[Added] New User Password Modal" />
   </component>
 </project>
