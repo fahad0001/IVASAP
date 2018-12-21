@@ -90,6 +90,7 @@ class SignIn extends React.Component {
                     console.log(`onSignIn: Expecting challenge to be recieved via ${data.challengeType}`);
                 }
                 this.setState({ user: data, loading: false, modalShowing: true });
+                return;
             }
 
             // Anything else and there is a problem
@@ -198,7 +199,7 @@ class SignIn extends React.Component {
                 placeholder: 'Username',
                 placeholderTextColor: '#404040',
                 value: this.state.username,
-                onChangeText: (text) => this.setState({ username: text.toLowerCase() })
+                onChangeText: (text) => this.setState({ username: text })
             },
             passwordInput: {
                 iconColor: '#19bec1',
