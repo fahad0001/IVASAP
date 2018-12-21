@@ -1,25 +1,25 @@
 {
-	"expo": {
-		"name": "IVASAP Service",
-		"sdkVersion": "26.0.0",
-		"icon": "./ivasap_icon.png",
-		"description": "Basic app",
-		"version": "2.0.1",
-		"slug": "ivasap",
-		"orientation": "portrait",
-		"ios": {
-			"bundleIdentifier": "com.ivasap.ivasapapp",
-			"buildNumber": "5"
-		},
-		"android": {
-			"package": "com.ivasap.service",
-	    "versionCode": 5,
-			"icon": "./ivasap_icon.png",
-			"permissions": [
-				"ACCESS_FINE_LOCATION"
-			]
-		}
-	},
+  "expo": {
+    "name": "IVASAP Service",
+    "sdkVersion": "26.0.0",
+    "icon": "./ivasap_icon.png",
+    "description": "Basic app",
+    "version": "2.0.2",
+    "slug": "ivasap",
+    "orientation": "portrait",
+    "ios": {
+      "bundleIdentifier": "com.ivasap.ivasapapp",
+      "buildNumber": "6"
+    },
+    "android": {
+      "package": "com.ivasap.service",
+      "versionCode": 6,
+      "icon": "./ivasap_icon.png",
+      "permissions": [
+        "ACCESS_FINE_LOCATION"
+      ]
+    }
+  },
   "infoPlist": {
     "NSLocationWhenInUseUsageDescription": "This app uses the location of the user."
   }
