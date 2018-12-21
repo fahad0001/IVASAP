@@ -22,6 +22,14 @@ const settings = (_that) => {
         description: 'Check your text messages for the code. Enter the six digit code you were just sent',
         onSubmit: (token) => _that.onConfirmSubmitted(token)
     },
+    passwordChangePrompt : {
+        isVisible: _that.state.modalShowing,
+        title: 'Confirmation Required',
+        description: 'Check your text messages for the code.',
+        tokenTxt: 'Enter the six digit token',
+        passTxt: 'Enter new password',
+        onSubmit: (token, pass) => _that.onResetSubmitted(token, pass)
+    },
     usernameInput: {
         iconColor: '#19bec1',
         iconName: 'user',
@@ -32,7 +40,7 @@ const settings = (_that) => {
         placeholder: 'Username',
         placeholderTextColor: '#404040',
         value: _that.state.username,
-        onChangeText: (text) => _that.setState({ username: text.toLowerCase() })
+        onChangeText: (text) => _that.setState({ username: text })
     },
     firstNameInput: {
         iconColor: '#19bec1',
@@ -207,7 +215,22 @@ const settings = (_that) => {
       fontSize: 14,
       fontWeight: 'bold',
       letterSpacing: 2,
-    }
+    },
+    updatePasswordButton: {
+          borderRadius: 21,
+          borderWidth: 2,
+          borderColor: '#45e8eb',
+          width: 200,
+          height: 42,
+          padding: 10,
+          marginRight: 10,
+          alignSelf: 'center',
+          textAlign: 'center',
+          color: '#00b5ec',
+          fontSize: 14,
+          fontWeight: 'bold',
+          letterSpacing: 2,
+      }
   };
 }
 
