@@ -159,7 +159,7 @@ class Profile extends Component {
     }
 
     async onChangePassword() {
-        this.setState({ loading: true });
+        this.setState({loading: true});
 
         try {
             const data = await Auth.forgotPassword(this.state.username);
@@ -167,18 +167,18 @@ class Profile extends Component {
 
             // // If there is a challenge, then show the modal
             if ('CodeDeliveryDetails' in data) {
-                this.setState({ user: data, loading: false, modalShowing: true });
+                this.setState({user: data, loading: false, modalShowing: true});
             }
             else {
-                this.setState({ error: 'Change password process failed to initiate', loading: false });
+                this.setState({error: 'Change password process failed to initiate', loading: false});
             }
         } catch (err) {
             console.log(`Error: ${JSON.stringify(err, null, 2)}`);
-            this.setState({ error: (err.message || err), loading: false });
+            this.setState({error: (err.message || err), loading: false});
         }
     }
 
-    async onResetSubmitted (token, pass) {
+    async onResetSubmitted(token, pass) {
         try {
             this.setState({loading: true});
             const response = await Auth.forgotPasswordSubmit(this.state.username, token, pass);
@@ -227,13 +227,8 @@ class Profile extends Component {
                 <StatusBar hidden={true} barStyle="light-content"/>
                 {!!this.state.error !== null && errorComponent}
                 {!!this.state.success !== null && successComponent}
-                <View style={styles.signUpForm}>
-                    <ScrollView style={styles.formContainer}>
-                        <View style={StyleSheet.flatten([styles.buttonsContainer, {marginBottom: 0}])}>
-                            <TouchableOpacity onPress={() => this.onChangePassword()}>
-                                <Text style={settings.updatePasswordButton}>{'Change Password'.toUpperCase()}</Text>
-                            </TouchableOpacity>
-                        </View>
+                <View style={StyleSheet.flatten([styles.formContainer, {height: '82%'}])}>
+                    <ScrollView style={StyleSheet.flatten([styles.signUpForm, {marginTop: '8%'}])}>
                         <KeyboardAvoidingView keyboardVerticalOffset={50} style={{flex: 1}} behavior='padding'>
                             <IconTextInput {...settings.usernameInput} editable={false} selectTextOnFocus={false}
                                            iconColor={'#888888'}/>
@@ -257,16 +252,23 @@ class Profile extends Component {
                                 <IconTextInput {...settings.zipInput}/>
                             </View>
                             }
+                            <View style={StyleSheet.flatten([styles.buttonsContainer])}>
+                                <TouchableOpacity onPress={() => this.onChangePassword()}>
+                                    <Text style={settings.updatePasswordButton}>{'Change Password'.toUpperCase()}</Text>
+                                </TouchableOpacity>
+                            </View>
                         </KeyboardAvoidingView>
                     </ScrollView>
-                </View>
-                <View style={styles.buttonsContainer}>
-                    <TouchableOpacity onPress={() => this.update()}>
-                        <Text style={{...settings.submitButtonInverse, color: '#00b5ec'}}>{'Update'.toUpperCase()}</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={() => this.logout()}>
-                        <Text style={{...settings.submitButtonInverse, color: '#00b5ec'}}>{'Logout'.toUpperCase()}</Text>
-                    </TouchableOpacity>
+                    <View style={StyleSheet.flatten([styles.buttonsContainer, {marginBottom: 0, marginTop: '5%', height: '15%'}])}>
+                        <TouchableOpacity onPress={() => this.update()}>
+                            <Text
+                                style={{...settings.submitButtonInverse, color: '#00b5ec'}}>{'Update'.toUpperCase()}</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => this.logout()}>
+                            <Text
+                                style={{...settings.submitButtonInverse, color: '#00b5ec'}}>{'Logout'.toUpperCase()}</Text>
+                        </TouchableOpacity>
+                    </View>
                 </View>
                 <ModalTokenInput {...settings.passwordChangePrompt}/>
             </Wrapper>
