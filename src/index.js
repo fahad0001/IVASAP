@@ -83,7 +83,7 @@ export default class App extends Component {
                 tabs={true}
                 lazy={true}
                 tabBarVisible={this.props.tabBarVisible}
-                tabBarPosition="bottom" 
+                tabBarPosition="bottom"
                 tabBarStyle={{borderTopColor: 'darkgrey', borderTopWidth: 1 / PixelRatio.get(), backgroundColor: 'ghostwhite',  opacity: 0.98}}>
                 <Scene key="nurse_map" component={Map} title="Map" showTitle={false} hideNavBar={true} icon={TabIcon} iconName="map"  />
                 <Scene key="nurse_assignments" component={Assignments} title="Appointments" hideNavBar={true} icon={TabIcon} iconName="calendar" onEnter={() => { Actions.refresh({key: Math.random()}); }} />
@@ -94,7 +94,7 @@ export default class App extends Component {
               <Scene key="nurse_drip" component={DripListItem} title="" hideNavBar={true}  />
               <Scene key="nurse_assigned_drip" component={AssignedDrip} title="" hideNavBar={true}  />
               </Scene>
-            </Scene>
+          </Scene>
         </Router>
       </Provider>
     );

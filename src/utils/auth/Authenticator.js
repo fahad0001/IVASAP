@@ -10,6 +10,8 @@ import ForgotPassword from './ForgotPassword';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
 import Services from '../../screens/Services';
+import portalUrl from "../../config/portalUrl";
+import {calculateTimeMilli, setEventInterval} from "../timer";
 
 class Authenticator extends Component {
     static defaultProps = {
@@ -34,6 +36,25 @@ class Authenticator extends Component {
             await AsyncStorage.setItem('@SuperStore:cart', JSON.stringify([]));
 
             const isNurseFlag = await AsyncStorage.getItem('@SuperStore:isNurse');
+
+            const setTimer = async () => {
+                try {
+                    const response = await fetch(`${portalUrl}/my_requests/${authData.username}.json`);
+                    const json = await response.json();
+                    if(json.results && json.results.length) {
+                        const timeValues = calculateTimeMilli(json.results);
+                        if(isNurseFlag === '1') {console.log('nurse logic here')}
+                        else {
+                            // Initialized timer with values
+                            setEventInterval(timeValues);
+                        }
+                    }
+                } catch (error) {
+                    alert(error);
+                }
+            };
+
+            setTimer();
 
             if (isNurseFlag === '1') {
               Actions.nurse_drips();

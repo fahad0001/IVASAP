@@ -26,6 +26,7 @@
     "email-validator": "^2.0.4",
     "expo": "^26.0.0",
     "graphql": "^0.13.2",
+    "moment": "^2.23.0",
     "prop-types": "^15.6.1",
     "pusher-js": "^4.3.0",
     "query-string": "^6.1.0",
