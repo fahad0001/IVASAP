@@ -56,7 +56,7 @@ class Map extends Component {
       {timeout: 30000}
     );
 
-    setTimeout(() => this.fetchLocation(), 2500);
+    // setTimeout(() => this.fetchLocation(), 2500);
   }
 
   fetchLocation = async () => {
@@ -73,12 +73,12 @@ class Map extends Component {
             latitudeDelta: LATITUDE_DELTA,
             longitudeDelta: LONGITUDE_DELTA,
             accuracy: position.coords.accuracy
-          }
+          };
 
           const coordinate = {
             latitude: position.coords.latitude,
             longitude: position.coords.longitude,
-          }
+          };
 
           this.setState({
             latitude: position.coords.latitude,
@@ -91,7 +91,7 @@ class Map extends Component {
           let url;
 
           if (isNurseFlag === '1') {
-            url = `https://portal.ivasap.com/nurse_location/${username}?longitude=${
+            url = `https://d09ff357.ngrok.io/nurse_location/${username}?longitude=${
               this.state.longitude
             }&latitude=${this.state.latitude}`;
           }
@@ -122,13 +122,30 @@ class Map extends Component {
     } catch (error) {
       alert(error);
     }
-  }
+  };
+
+  shouldComponentUpdate(nextProps) {
+      if(this.props.nurseLocation !== nextProps.nurseLocation){
+          const location = JSON.parse(JSON.stringify(nextProps.nurseLocation));
+          this.setState({
+              latitude: location.latitude,
+              longitude: location.longitude,
+              error: null,
+              region: location.region,
+              coordinate: location.coordinate
+          });
+        return true;
+      }
+      return false;
+    }
 
   componentWillUnmount() {
     navigator.geolocation.clearWatch(this.watchId);
   }
 
   render() {
+    const {nurseLocation} = this.props;
+
     return (
       <MapView
         style={styles.container}
@@ -139,9 +156,18 @@ class Map extends Component {
         followsUserLocation={true}
         showsMyLocationButton={true}
       >
-        {!!Platform.OS === 'android' ?
-          <Marker coordinate={this.state.coordinate} title="My Location" />
-          : null
+        {/*{!!Platform.OS === 'android' ?*/}
+          {/*<Marker coordinate={this.state.coordinate} title="My Location" />*/}
+          {/*: null*/}
+        {/*}*/}
+
+        {!! Object.keys(nurseLocation).length ?
+            <Marker
+                key={nurseLocation.requestId}
+                coordinate={this.state.coordinate}
+                image={nurseCar}
+            />
+            : null
         }
 
         {!!this.props.nearbyNurses.map(nurse => (
@@ -162,9 +188,11 @@ class Map extends Component {
 const mapStateToProps = state => {
   const coordinate = state.locations.user.coordinate;
   const nearbyNurses = state.locations.nearbyNurses;
+  const nurseLocation = state.locations.nurseLocation;
   return {
     coordinate,
     nearbyNurses,
+    nurseLocation
   };
 };
 
