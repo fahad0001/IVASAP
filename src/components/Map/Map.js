@@ -91,7 +91,7 @@ class Map extends Component {
           let url;
 
           if (isNurseFlag === '1') {
-            url = `https://d09ff357.ngrok.io/nurse_location/${username}?longitude=${
+            url = `https://portal.ivasap.com/nurse_location/${username}?longitude=${
               this.state.longitude
             }&latitude=${this.state.latitude}`;
           }
