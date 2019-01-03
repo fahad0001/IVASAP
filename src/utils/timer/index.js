@@ -5,8 +5,8 @@ import {Dimensions} from "react-native";
 
 export const calculateTimeMilli = (requests, isNurse) => {
     const filteredTime = requests.filter( request => {
-        return moment().format('YYYY-MM-DD') === request['start_date']
-            && moment().format('hh:mma') < request['start_time'];
+        return moment().format('YYYY-MM-DD') === request['start_date'] &&
+            moment().format('HH:mm') < moment(request['start_time'], ["hh::mma"]).format('HH:mm');
     });
     let timeInMilli = [];
     // requestData holds the data to be include with every interval

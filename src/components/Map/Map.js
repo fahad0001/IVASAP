@@ -126,7 +126,7 @@ class Map extends Component {
 
   shouldComponentUpdate(nextProps) {
       if(this.props.nurseLocation !== nextProps.nurseLocation){
-          const location = JSON.parse(JSON.stringify(nextProps.nurseLocation));
+          const location = JSON.parse(nextProps.nurseLocation.location);
           this.setState({
               latitude: location.latitude,
               longitude: location.longitude,
