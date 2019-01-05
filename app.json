@@ -3,7 +3,7 @@
     "name": "IVASAP Service",
     "sdkVersion": "26.0.0",
     "icon": "./ivasap_icon.png",
-    "description": "Basic app",
+    "description": "IVASAP App",
     "version": "2.0.3",
     "slug": "ivasap",
     "orientation": "portrait",

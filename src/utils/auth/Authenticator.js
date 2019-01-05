@@ -19,6 +19,8 @@ import {
 } from "../timer";
 import {setNurseLocation} from "../../actions/locations";
 import moment from "moment";
+import { Permissions, Location } from 'expo';
+
 
 class Authenticator extends Component {
     static defaultProps = {
@@ -78,14 +80,14 @@ class Authenticator extends Component {
     setTimer = async (username, isNurseFlag) => {
         try {
             // const isNurseFlag = await AsyncStorage.getItem('@SuperStore:isNurse');
-
-            const response = await fetch(`${portalUrl}/${isNurseFlag !== "1" && 'my_' || ''}requests/${username}.json`);
+            const {status} = await Permissions.askAsync(Permissions.LOCATION);
+            const response = await fetch(`${portalUrl}/${isNurseFlag !== "1" ? 'my_requests' : 'requests/assignments'}/${username}.json`);
             const json = await response.json();
             const results = json.requests || json.results;
             if (results && results.length) {
                 const timeValues = calculateTimeMilli(results);
                 if (isNurseFlag === '1') {
-                    setEventInterval(timeValues, eventTimerHandlerNurse, this.props.setNurseLocation);
+                    setEventInterval(timeValues, eventTimerHandlerNurse, this.props.setNurseLocation, status);
                 }
                 else {
                     // Initialized timer with values

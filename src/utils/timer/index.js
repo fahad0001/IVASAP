@@ -1,7 +1,8 @@
 import React from 'react';
 import moment from 'moment';
-import portalUrl from "../../config/portalUrl";
 import {Dimensions} from "react-native";
+import portalUrl from "../../config/portalUrl";
+import {Location} from "expo";
 
 export const calculateTimeMilli = (requests, isNurse) => {
     const filteredTime = requests.filter( request => {
@@ -31,11 +32,11 @@ const transformTimeToMilli = time => {
     return timeWithGap > 0 ? timeWithGap : 5000;
 };
 
-export const setEventInterval = (timeEvents, handler, setNurseLocation) => {
+export const setEventInterval = (timeEvents, handler, setNurseLocation, locationPermission) => {
     console.log(timeEvents);
     let timerStore = [];
     for(let i = 0; i < timeEvents.length; i++) {
-        timerStore.push(setInterval(() => handler(i, timerStore[i], timeEvents[i], setNurseLocation), timeEvents[i].time))
+        timerStore.push(setInterval(() => handler(i, timerStore[i], timeEvents[i], setNurseLocation, locationPermission), timeEvents[i].time))
     }
 };
 
@@ -44,8 +45,7 @@ export const setEventInterval = (timeEvents, handler, setNurseLocation) => {
 export const eventTimerHandler = (id, timerInstance, timeEvent, setNurseLocation) => {
     let locationFetch = setInterval(() => {
         let flag = false; // if nurse reach the location this flag will be enabled from api
-
-        fetch(`${portalUrl}/nurse_location?request_id=${timeEvent.requestData.requestId}.json`)
+        fetch(`${portalUrl}/nurse_location?request_id=${timeEvent.requestData.requestId}`)
             .then(respJson => respJson.json())
             .then(response => {
                 console.log(response);
@@ -58,85 +58,95 @@ export const eventTimerHandler = (id, timerInstance, timeEvent, setNurseLocation
 
             });
 
-    }, 20000);
+    }, 40000);
     console.log('hello', timeEvent.time);
     clearInterval(timerInstance);
 };
 
 // This event handler if for user side
 // This will be used to get location of nurse
-export const eventTimerHandlerNurse = (id, timerInstance, timeEvent, setNurseLocation) => {
+export const eventTimerHandlerNurse = (id, timerInstance, timeEvent, setNurseLocation, locationPermission) => {
     try {
-        const { width, height } = Dimensions.get('window');
-        const ASPECT_RATIO    = width / height;
-        const LATITUDE_DELTA  = 0.0122;
+        const {width, height} = Dimensions.get('window');
+        const ASPECT_RATIO = width / height;
+        const LATITUDE_DELTA = 0.0122;
         const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 
         let currentPosition = setInterval(() => {
             let flag = false; // if nurse reach the location this flag will be enabled from api
-            navigator.geolocation.getCurrentPosition(
-                (position) => {
-                        const region = {
-                            latitude: position.coords.latitude,
-                            longitude: position.coords.longitude,
-                            latitudeDelta: LATITUDE_DELTA,
-                            longitudeDelta: LONGITUDE_DELTA,
-                            accuracy: position.coords.accuracy
-                        };
+            _syncPosition(locationPermission)
+                .then(position => {
+                    console.log(position.coords);
+                    const region = {
+                        latitude: position.coords.latitude,
+                        longitude: position.coords.longitude,
+                        latitudeDelta: LATITUDE_DELTA,
+                        longitudeDelta: LONGITUDE_DELTA,
+                        accuracy: position.coords.accuracy
+                    };
 
-                        const coordinate = {
-                            latitude: position.coords.latitude,
-                            longitude: position.coords.longitude,
-                        };
+                    const coordinate = {
+                        latitude: position.coords.latitude,
+                        longitude: position.coords.longitude,
+                    };
 
-                        const location = JSON.stringify({
-                            latitude: position.coords.latitude,
-                            longitude: position.coords.longitude,
-                            error: null,
-                            region,
-                            coordinate
-                        });
+                    const location = JSON.stringify({
+                        latitude: position.coords.latitude,
+                        longitude: position.coords.longitude,
+                        error: null,
+                        region,
+                        coordinate
+                    });
 
-                        const payload = {
-                            request_id: timeEvent.requestData.requestId,
-                            nurse_id: 0,
-                            username: 0,
-                            location: location,
-                            flag: false,
-                            message: ''
-                        };
-                        setNurseLocation(payload);
-                        fetch(`${portalUrl}/nurse_location`, {
-                            method: "POST",
-                            headers: {
-                                Accept: "application/json",
-                                "Content-Type": "application/json",
-                                // "X-Code": item.confirmation_code
-                            },
-                            body: JSON.stringify({
-                                nurse_location: payload
-                            })
+                    const payload = {
+                        request_id: timeEvent.requestData.requestId,
+                        nurse_id: 0,
+                        username: 0,
+                        location: location,
+                        flag: false,
+                        message: ''
+                    };
+                    setNurseLocation(payload);
+                    fetch(`${portalUrl}/nurse_location`, {
+                        method: "POST",
+                        headers: {
+                            Accept: "application/json",
+                            "Content-Type": "application/json",
+                            // "X-Code": item.confirmation_code
+                        },
+                        body: JSON.stringify({
+                            nurse_location: payload
                         })
-                            .then(response => {
-                                console.log(response);
-                                if(stopTimer(timeEvent.requestData.startTime, flag)) clearInterval(currentPosition)
-                            })
-                            .catch(error => {
-                                if(stopTimer(timeEvent.requestData.startTime, flag)) clearInterval(currentPosition);
-                                alert(error)
-                            })
-                    },
-                (error) => alert(error.message),
-                {timeout: 30000}
-            );
+                    })
+                        .then(response => {
+                            console.log(response);
+                            if (stopTimer(timeEvent.requestData.startTime, flag)) clearInterval(currentPosition)
+                        })
+                        .catch(error => {
+                            if (stopTimer(timeEvent.requestData.startTime, flag)) clearInterval(currentPosition);
+                            alert(error)
+                        })
+                })
+                .catch((e) => {
+                    // this one is firing the error instantly
+                    alert(e + ' Please make sure your location (GPS) is turned on.');
+                });
 
-        }, 20000);
+        }, 40000);
     }
     catch (e) {
         alert(e)
     }
     console.log('hello', timeEvent.time);
     clearInterval(timerInstance);
+};
+
+const _syncPosition = async (status) => {
+    if (status === 'granted') {
+        return Location.getCurrentPositionAsync({enableHighAccuracy: true})
+    } else {
+        throw new Error('Location permission not granted');
+    }
 };
 
 const stopTimer = (terminateTime, flag) => terminateTime <= moment().format('hh:mma') || flag;
