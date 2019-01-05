@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MapView } from 'expo';
+import { MapView, Permissions, Location } from 'expo';
 import styles from './styles';
 import { AsyncStorage, Alert, Platform, Dimensions, View } from 'react-native';
 import {
@@ -40,24 +40,39 @@ class Map extends Component {
   }
 
   componentDidMount() {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        this.setState({
-          region: {
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
-            latitudeDelta: LATITUDE_DELTA,
-            longitudeDelta: LONGITUDE_DELTA,
-            accuracy: position.coords.accuracy
-          }
-        });
-      },
-      (error) => alert(error.message),
-      {timeout: 30000}
-    );
-
-    setTimeout(() => this.fetchLocation(), 2500);
+      this._getPosition();
+    // setTimeout(() => this.fetchLocation(), 2500);
   }
+
+  _getPosition = async () => {
+      const {status} = await Permissions.askAsync(Permissions.LOCATION);
+
+      if (status === 'granted') {
+          Location.getCurrentPositionAsync({enableHighAccuracy: true}).then((position) => {
+              console.log(position.coords);
+              const region = {
+                  latitude: position.coords.latitude,
+                  longitude: position.coords.longitude,
+                  latitudeDelta: LATITUDE_DELTA,
+                  longitudeDelta: LONGITUDE_DELTA,
+                  accuracy: position.coords.accuracy
+              };
+              this.map.animateToRegion((region), 10);
+              this.setState({
+                  region: region,
+                  coordinate: {
+                      latitude: position.coords.latitude,
+                      longitude: position.coords.longitude,
+                  }
+              });
+          }).catch((e) => {
+              // this one is firing the error instantly
+              alert(e + ' Please make sure your location (GPS) is turned on.');
+          });
+      } else {
+          throw new Error('Location permission not granted');
+      }
+  };
 
   fetchLocation = async () => {
     try {
@@ -73,12 +88,12 @@ class Map extends Component {
             latitudeDelta: LATITUDE_DELTA,
             longitudeDelta: LONGITUDE_DELTA,
             accuracy: position.coords.accuracy
-          }
+          };
 
           const coordinate = {
             latitude: position.coords.latitude,
             longitude: position.coords.longitude,
-          }
+          };
 
           this.setState({
             latitude: position.coords.latitude,
@@ -122,16 +137,34 @@ class Map extends Component {
     } catch (error) {
       alert(error);
     }
-  }
+  };
+
+  shouldComponentUpdate(nextProps) {
+      if(this.props.nurseLocation !== nextProps.nurseLocation){
+          const location = JSON.parse(nextProps.nurseLocation.location);
+          this.setState({
+              latitude: location.latitude,
+              longitude: location.longitude,
+              error: null,
+              region: location.region,
+              coordinate: location.coordinate
+          });
+        return true;
+      }
+      return false;
+    }
 
   componentWillUnmount() {
     navigator.geolocation.clearWatch(this.watchId);
   }
 
   render() {
+    const {nurseLocation} = this.props;
+
     return (
       <MapView
         style={styles.container}
+        ref={map => this.map = map}
         region={this.state.region}
         provider={null}
         mapType="mutedStandard"
@@ -139,9 +172,13 @@ class Map extends Component {
         followsUserLocation={true}
         showsMyLocationButton={true}
       >
-        {!!Platform.OS === 'android' ?
-          <Marker coordinate={this.state.coordinate} title="My Location" />
-          : null
+        {!! Object.keys(nurseLocation).length ?
+            <Marker
+                key={nurseLocation.requestId}
+                coordinate={this.state.coordinate}
+                image={nurseCar}
+            />
+            : null
         }
 
         {!!this.props.nearbyNurses.map(nurse => (
@@ -162,9 +199,11 @@ class Map extends Component {
 const mapStateToProps = state => {
   const coordinate = state.locations.user.coordinate;
   const nearbyNurses = state.locations.nearbyNurses;
+  const nurseLocation = state.locations.nurseLocation;
   return {
     coordinate,
     nearbyNurses,
+    nurseLocation
   };
 };
 

@@ -1,15 +1,26 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 import { AsyncStorage } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import { Router, Scene, Button, Text } from 'react-native-router-flux';
 import { Actions } from 'react-native-router-flux';
-import { Provider } from 'react-redux';
 
 import ForgotUsername from './ForgotUsername';
 import ForgotPassword from './ForgotPassword';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
 import Services from '../../screens/Services';
+import portalUrl from "../../config/portalUrl";
+import {
+    calculateTimeMilli,
+    setEventInterval,
+    eventTimerHandler,
+    eventTimerHandlerNurse
+} from "../timer";
+import {setNurseLocation} from "../../actions/locations";
+import moment from "moment";
+import { Permissions, Location } from 'expo';
+
 
 class Authenticator extends Component {
     static defaultProps = {
@@ -63,7 +74,30 @@ class Authenticator extends Component {
         if (newState === 'authenticated') {
             this.props.onAuthenticated(data);
         }
+        this.setTimer(data.username, data.signInUserSession.idToken.payload['custom:is_ivasap_nurse'] || '0');
     }
+
+    setTimer = async (username, isNurseFlag) => {
+        try {
+            // const isNurseFlag = await AsyncStorage.getItem('@SuperStore:isNurse');
+            const {status} = await Permissions.askAsync(Permissions.LOCATION);
+            const response = await fetch(`${portalUrl}/${isNurseFlag !== "1" ? 'my_requests' : 'requests/assignments'}/${username}.json`);
+            const json = await response.json();
+            const results = json.requests || json.results;
+            if (results && results.length) {
+                const timeValues = calculateTimeMilli(results);
+                if (isNurseFlag === '1') {
+                    setEventInterval(timeValues, eventTimerHandlerNurse, this.props.setNurseLocation, status);
+                }
+                else {
+                    // Initialized timer with values
+                    setEventInterval(timeValues, eventTimerHandler, this.props.setNurseLocation);
+                }
+            }
+        } catch (error) {
+            alert(error);
+        }
+    };
 
     render() {
         const props = {
@@ -88,4 +122,11 @@ class Authenticator extends Component {
     }
 }
 
-export default Authenticator;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        setNurseLocation: (nurseLocation) => dispatch(setNurseLocation(nurseLocation))
+    }
+};
+
+export default connect(null, mapDispatchToProps)(Authenticator);
+

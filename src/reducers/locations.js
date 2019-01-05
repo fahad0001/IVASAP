@@ -3,6 +3,7 @@ import {
   GET_USERS_CUSTOM_LOCATION,
   BOOK_SERVICES,
   GET_NEARBY_NURSES,
+  RECEIVED_NURSE_LOCATION
 } from '../actions/locations';
 
 const initialState = {
@@ -13,6 +14,8 @@ const initialState = {
     },
   },
   nearbyNurses: [],
+  nurseLocation: {},
+  invokeWatchPosition: false
 };
 
 const reducer = (state = initialState, action) => {
@@ -37,6 +40,12 @@ const reducer = (state = initialState, action) => {
         ...state,
         nearbyNurses: action.payload,
       };
+    case RECEIVED_NURSE_LOCATION:
+      return {
+          ...state,
+          nurseLocation: action.payload
+      };
+
     default:
       return state;
   }

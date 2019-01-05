@@ -3,17 +3,17 @@
     "name": "IVASAP Service",
     "sdkVersion": "26.0.0",
     "icon": "./ivasap_icon.png",
-    "description": "Basic app",
-    "version": "2.0.3",
+    "description": "IVASAP App",
+    "version": "2.0.4",
     "slug": "ivasap",
     "orientation": "portrait",
     "ios": {
       "bundleIdentifier": "com.ivasap.ivasapapp",
-      "buildNumber": "7"
+      "buildNumber": "8"
     },
     "android": {
       "package": "com.ivasap.service",
-      "versionCode": 7,
+      "versionCode": 8,
       "icon": "./ivasap_icon.png",
       "permissions": [
         "ACCESS_FINE_LOCATION"
