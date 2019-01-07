@@ -74,7 +74,10 @@ class Authenticator extends Component {
         if (newState === 'authenticated') {
             this.props.onAuthenticated(data);
         }
-        this.setTimer(data.username, data.signInUserSession.idToken.payload['custom:is_ivasap_nurse'] || '0');
+
+        if(newState === 'signIn') {
+            this.setTimer(data.username, data.signInUserSession.idToken.payload['custom:is_ivasap_nurse'] || '0');
+        }
     }
 
     setTimer = async (username, isNurseFlag) => {
